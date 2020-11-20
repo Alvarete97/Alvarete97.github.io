@@ -1,0 +1,101 @@
+	<!doctype html>
+	<html lang="es">
+
+
+	<head>
+		<title> TFG - Enciclopedia web de personajes y escenarios en un videojuego</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/fondo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/buscador.css"/>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+
+
+
+
+
+	<body class="fondo" id="fondo" style="background-image: url(imagenes/fondo/banner_background.jpg);">
+		
+		<!-- Contenedor de todo el contenido del html -->
+		<div id="container">
+			<!-- Cabecera -->
+			<header>
+				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+			</header>
+			<!-- Barra de navegación -->
+			<nav>
+				<ul>
+					<li class="selector">
+						<a class="active" href="#"> Inicio </a>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Teoría del color</a></li>
+							<li><a href="#">Teoría de la forma</a></li>
+							<li><a href="#">Teoría de la composición</a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Elementos y origen</a></li>
+							<li><a href="#">Historia de la nacion</a></li>
+							<li><a href="#">División actual</a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="html/personajes.html">Personajes</a></li>
+							<li><a href="html/escenarios.html">Escenarios</a></li>
+						</ul>
+					</li>
+					<li id="buscador">
+						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
+						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
+					</input type="submit" value="buscar">
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Cambio de linea -->
+		<div class="saltoLinea"> </div>
+
+		<!-- Contenido -->
+		<section id="content">
+			<div class="separacion_Inicio"> </div>
+			<div class="titulo_contenido">
+				Hola mundo !
+			</div>
+			<div class="contenido_contenido">
+				Esto es el contenido del cuerpo mas corporal de todo el cuerpo de la página web.<br>
+				Y esto es otra frase de relleno rellenoso para estimar un texto que vaya en esta sección
+			</div>
+
+			<a class="boton_inicio" href="html/mapa.html"> Ir al mapa </a>
+		</section>
+		<!-- Contenido lateral -->
+		<aside>
+
+		</aside>
+
+		<footer class="pie_pagina">
+			Álvaro Sal TFG &copy 2020
+		</footer>
+	</div>
+
+
+
+
+
+</body>
+
+</html>

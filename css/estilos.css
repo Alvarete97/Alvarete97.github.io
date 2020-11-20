@@ -1,0 +1,185 @@
+/*Anular el estilo genérico*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+#container{
+	width: 100%;
+	border: 1px black;
+}
+
+header{
+	background-color: #1e1e1e;
+	min-height: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	padding: 1%;
+}
+nav{
+	float: left;
+	background-color: #1e1e1e;
+	/*min-height: 70px;*/
+	width: 100%;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+	padding: 1%;
+	text-decoration: none;
+}
+.selector{
+	width: 15%;
+	color: white;
+}
+#buscador{
+	width: 40%;
+}
+#input_buscador{
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom-color: white;
+	background-color: #1e1e1e;
+	color: white;
+	font-family: arial black;
+}
+.saltoLinea{
+	clear: both;
+	padding: 1%;
+	width: 20%;
+}
+a{
+	text-decoration: none;
+	color: white !important;
+}
+.dropdown-menu{
+	background-color: #717171 !important;
+}
+.separacion_Inicio{
+	height: 300px;
+}
+.titulo_contenido{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+.contenido_contenido{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+}
+.pie_pagina{
+	position: absolute;
+	width: 100%;
+	color: white;
+}
+.boton_inicio{
+	text-decoration: none;
+	display: block;
+	width: 40%;
+	margin: 20px auto;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #1e1e1e;
+	border-radius: 6px;
+	border: 2px solid #a1a1a1;
+}
+.boton_inicio:hover{
+	color: #1e1e1e !important;
+	background-color: #a1a1a1;
+	border-radius: 6px;
+	border: 2px solid #1e1e1e;
+	text-decoration: none;
+	-webkit-transition: color 500ms;
+	-moz-transition: color 500ms;
+	-o-transition: color 500ms;
+	-ms-transition: color 500ms;
+	transition: color 500ms;
+	-webkit-transition: background-color 500ms;
+	-moz-transition: background-color 500ms;
+	-o-transition: background-color 500ms;
+	-ms-transition: background-color 500ms;
+	transition: background-color 500ms;
+}
+
+.mapa_int{
+	border-style: none;
+	border-width: 0px;
+	width: 100%;
+	height: 561px;
+	max-width: 1134px;
+	filter: grayscale(100%);
+}
+.mapa_int:hover {
+	filter: grayscale(0%);
+	-webkit-transition: grayscale 500ms;
+	-moz-transition: grayscale 500ms;
+	-o-transition: grayscale 500ms;
+	-ms-transition: grayscale 500ms;
+	transition: grayscale 500ms;
+}
+
+.icono_pj{
+
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	max-width: 20%;	 
+}
+
+.icono_pj:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);	 
+}
+
+.a_Iconos{
+	width: fit-content;
+	height: fit-content;
+}
+
+.iconos_facciones{
+	max-width:5%;
+}
+/* Cambio de elementos en versión móvil*/
+@media screen and (max-width:800px) {
+	nav{
+		width: 100%;
+		padding: 2% 5px;
+	}
+	.selector{
+		width: 100%;
+	}
+	#buscador{
+		width: 100%;
+	}
+	.dropdown-menu{
+		position: relative !important;
+		width: 100%;
+	}
+	.separacion_Inicio{
+		height: 100px;
+	}
+	.boton_inicio{
+		margin-top: 3%;
+		margin-right: auto;
+		margin-left: auto;
+		width: 90%;
+	}
+	.icono_pj{
+
+		filter: grayscale(0%);
+		max-width: 60%;	 
+	}
+	.iconos_facciones{
+		max-width:15%;
+	}
+}
