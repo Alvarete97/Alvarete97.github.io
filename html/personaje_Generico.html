@@ -1,0 +1,139 @@
+	<!doctype html>
+	<html lang="es">
+
+
+	<head>
+		<title> Personajes TFG</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/fondo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/buscador.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="../js/carrusel.js"></script>
+		
+	</head>
+
+
+
+
+
+	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
+		
+		<!-- Contenedor de todo el contenido del html -->
+		<div id="container">
+			<!-- Cabecera -->
+			<header>
+				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+			</header>
+			<!-- Barra de navegación -->
+			<nav>
+				<ul>
+					<li class="selector">
+						<a href="../index.html"> Inicio </a>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Teoría del color</a></li>
+							<li><a href="#">Teoría de la forma</a></li>
+							<li><a href="#">Teoría de la composición</a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Elementos y origen</a></li>
+							<li><a href="#">Historia de la nacion</a></li>
+							<li><a href="#">División actual</a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Personajes</a></li>
+							<li><a href="escenarios.html">Escenarios</a></li>
+						</ul>
+					</li>
+					<li id="buscador">
+						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
+						<img src="../imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
+					</input type="submit" value="buscar">
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Cambio de linea -->
+		<div class="saltoLinea"> </div>
+
+		<!-- Contenido -->
+
+		<div id="carrusel">
+			<a href="#" ><img src="../imagenes/iconos/flecha_izq.png"  class="flecha_izq" /></a>
+			
+			<div class="carrusel">
+				<div class="product" id="product_0">
+					<img src="../imagenes/iconos/agua.png"  class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_1">
+					<img src="../imagenes/iconos/aire.png" class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_2">
+					<img src="../imagenes/iconos/fuego.png"  class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_3">
+					<img src="../imagenes/iconos/hielo.png" class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_4">
+					<img src="../imagenes/iconos/neutro.png"  class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_5">
+					<img src="../imagenes/iconos/planta.png"  class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_6">
+					<img src="../imagenes/iconos/roca.png" class="iconos_elemento" />
+					
+				</div>
+				<div class="product" id="product_7">
+					<img src="../imagenes/iconos/tierra.png" class="iconos_elemento" />
+					
+				</div>
+			</div>
+			<a href="#" ><img src="../imagenes/iconos/flecha_dch.png" class="flecha_dch" /></a>
+		</div>
+
+		<div>
+			
+			<img src="../imagenes/personajes/personaje.png" class="personaje_facciones">
+			<iframe src="datos_pj.html" class="datos_pj" frameborder="0" title="Datos de los personajes"></iframe>
+
+		</img>
+
+
+	</div>
+
+
+	<footer class="pie_pagina">
+		Álvaro Sal TFG &copy 2020
+	</footer>
+</div>
+
+
+
+
+
+</body>
+
+</html>

@@ -149,6 +149,71 @@ a{
 .iconos_facciones{
 	max-width:5%;
 }
+
+.personaje_facciones{
+	max-width: 40%;
+	max-height: 680px;
+	vertical-align: none;
+}
+.datos_pj{
+	width: 50%;
+	height: 680px;
+	position: static;
+	vertical-align: middle;
+}
+.flecha_dch{
+	max-width: 3%;
+}
+.flecha_izq{
+	max-width: 3%;
+}
+.iconos_elemento{
+	height: 100px;
+}
+#carrusel .flecha_izq {
+	position: absolute;
+	left: 8%;
+	z-index: 1;
+	top: 16%;
+}
+
+#carrusel .flecha_dch {
+	position: absolute;
+	right: 8%;
+	z-index: 1;
+	top: 16%;
+}
+
+#carrusel {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.carrusel {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.carrusel>div {
+	float: none;
+	text-align: center;
+	margin: 10px;
+	max-width: 103px;
+	display: inline-block;
+}
+
+.carrusel img {
+	cursor:pointer;
+}
+
+.product {
+}
+
+
 /* Cambio de elementos en versión móvil*/
 @media screen and (max-width:800px) {
 	nav{
@@ -181,5 +246,23 @@ a{
 	}
 	.iconos_facciones{
 		max-width:15%;
+	}
+	.personaje_facciones{
+		width: 70%;
+		max-height: none;
+		max-width: none;
+	}
+	.datos_pj{
+		width: 80%;
+		margin-top: 20px;
+	}
+	.iconos_elemento{
+		height: 50px;
+	}
+	#carrusel .flecha_izq {
+		top: 45%;
+	}
+	#carrusel .flecha_dch {
+		top: 45%;
 	}
 }
