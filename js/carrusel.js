@@ -3,7 +3,7 @@ var current = 0;
 var imagenes = new Array();
 
 $(document).ready(function() {
-	var numImages = 8;
+	var numImages = 6;
 	if (numImages <= 3) {
 		$('.flecha_dch').css('display', 'none');
 		$('.flecha_izq').css('display', 'none');
@@ -15,22 +15,8 @@ $(document).ready(function() {
 		} else {
 			current = numImages - 3;
 		}
-
 		$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
-
 		return false;
-	});
-
-	$('.flecha_izq').on('hover', function() {
-		$(this).css('opacity','0.5');
-	}, function() {
-		$(this).css('opacity','1');
-	});
-
-	$('.flecha_dch').on('hover', function() {
-		$(this).css('opacity','0.5');
-	}, function() {
-		$(this).css('opacity','1');
 	});
 
 	$('.flecha_dch').on('click', function() {
@@ -39,9 +25,7 @@ $(document).ready(function() {
 		} else {
 			current = 0;
 		}
-
 		$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
-
 		return false;
 	}); 
 });

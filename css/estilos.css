@@ -163,25 +163,28 @@ a{
 }
 .flecha_dch{
 	max-width: 3%;
-}
-.flecha_izq{
-	max-width: 3%;
-}
-.iconos_elemento{
-	height: 100px;
-}
-#carrusel .flecha_izq {
-	position: absolute;
-	left: 8%;
-	z-index: 1;
-	top: 16%;
-}
-
-#carrusel .flecha_dch {
 	position: absolute;
 	right: 8%;
 	z-index: 1;
 	top: 16%;
+	opacity: 0.4;
+}
+.flecha_dch:hover{
+	opacity: 1;
+}
+.flecha_izq{
+	max-width: 3%;
+	position: absolute;
+	left: 8%;
+	z-index: 1;
+	top: 16%;
+	opacity: 0.4;
+}
+.flecha_izq:hover {
+	opacity: 1;
+}
+.iconos_elemento{
+	height: 100px;
 }
 
 #carrusel {
@@ -259,10 +262,12 @@ a{
 	.iconos_elemento{
 		height: 50px;
 	}
-	#carrusel .flecha_izq {
+	.flecha_izq {
 		top: 45%;
+		opacity: 1;
 	}
-	#carrusel .flecha_dch {
+	.flecha_dch {
 		top: 45%;
+		opacity: 1;
 	}
 }
