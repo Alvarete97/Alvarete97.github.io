@@ -1,0 +1,98 @@
+	<!doctype html>
+	<html lang="es">
+
+
+	<head>
+		<title> Personajes TFG</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/fondo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/buscador.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="../js/carrusel.js"></script>
+		
+	</head>
+
+	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
+		
+		<!-- Contenedor de todo el contenido del html -->
+		<div id="container">
+			<!-- Cabecera -->
+			<header>
+				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+			</header>
+			<!-- Barra de navegación -->
+			<nav>
+				<ul>
+					<li class="selector">
+						<a href="../index.html"> Inicio </a>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="teoria_color.html">Teoría del color</a></li>
+							<li><a href="#">Teoría de la forma</a></li>
+							<li><a href="#">Teoría de la composición</a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Elementos y origen</a></li>
+							<li><a href="#">Historia de la nacion</a></li>
+							<li><a href="../html/mapa.html">División actual</a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a href="#">Personajes</a></li>
+							<li><a href="escenarios.html">Escenarios</a></li>
+						</ul>
+					</li>
+					<li id="buscador">
+						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
+						<img src="../imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
+					</input type="submit" value="buscar">
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Cambio de linea -->
+		<div class="saltoLinea"> </div>
+
+		<!-- Contenido -->
+		<div class="container">
+			<img src="../imagenes/referencias/psicologia_color_Heller.jpg" class="icono_libros">
+			<div class="libros_cita"> Heller, E. (2008). Psicología del color: Cómo actúan los colores sobre los sentimientos y la razón. Barcelona: Gustavo Gili.</div>
+			<br>
+			<div class="libros_justificacion"> Para este trabajo la gestión de color para transmitir una sensación al jugador es muy importante, es por ello que se ha tomado como principal refencia de color este libro para la creación de personajes y ambientación de escenarios. Y con ello, potenciar las singularidades y persoanlidades de cada civilación o personaje destacable.<br> Heller nos proporciona una visión de la percepción humana de los colores mediante sus estudios, e incluso recopila en pequeñas gamas cromáticas los conjuntos que representan ciertas emociones.</div>
+<!-- Cambio de linea -->
+		<div class="saltoLinea"> </div>
+
+			<img src="../imagenes/referencias/interaccion_color_Albers.jpg" class="icono_libros">
+			<div class="libros_cita"> Albers, J. (1996). La interacción del color. Madrid: Gustavo Gili.</div>
+			<br>
+			<div class="libros_justificacion"> Desde una perspectiva más artística y práctica este libro ejemplifica el uso de contraste y tonos para la expresión de cualidades físicas del color.</div>
+		</div>
+
+
+		<footer class="pie_pagina">
+			Álvaro Sal TFG &copy 2020
+		</footer>
+	</div>
+
+
+
+
+
+</body>
+
+</html>
