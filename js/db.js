@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // iniciando
 const express = require('express');
 const mongoose = require('mongoose');
@@ -13,9 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 // Parametros de conexion
-const USER = "Ninetales";
-const PASSWORD = "Asf271020";
-const DATA_BASE = "dbTFG";
+const USER = "0";
+const PASSWORD = "0";
+const DATA_BASE = "0";
 
 // Preparando cadena de conexion
 const CONECTOR = `mongodb+srv://${USER}:${PASSWORD}@dbtfg.d4wbo.mongodb.net/${DATA_BASE}?retryWrites=true&w=majority`;
@@ -47,6 +48,10 @@ connect(CONECTOR, OPTIONS, MongoError => {
 
 /*const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://Ninetales:<password>@dbtfg.d4wbo.mongodb.net/<dbname>?retryWrites=true&w=majority";
+=======
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://Ninetales:<Contraseña>@dbtfg.d4wbo.mongodb.net/<BDD>?retryWrites=true&w=majority";
+>>>>>>> 582b0be84b73ea95b082861f7ef890b9b3b1df52
 const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
     const collection = client.db("test").collection("devices");
