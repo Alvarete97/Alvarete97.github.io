@@ -1,4 +1,4 @@
-
+/*
 var current = 0;
 var imagenes = new Array();
 
@@ -28,4 +28,4 @@ $(document).ready(function() {
 		$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
 		return false;
 	}); 
-});
+});*/
