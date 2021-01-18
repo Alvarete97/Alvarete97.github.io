@@ -1,3 +1,6 @@
+  
+
+   //Datos concretos del personaje (sub pagina del personaje)
 
 //Recogiendo los datos
 

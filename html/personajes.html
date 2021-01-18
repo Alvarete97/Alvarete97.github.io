@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<script src="../js/personajes_js.js"></script>
+
 	</head>
 
 
@@ -72,19 +75,23 @@
 		<!-- Contenido -->
 		<section id="content">
 
-			<div class="titulo_contenido">
+	<div class="titulo_contenido">
 				Listado Personajes
 			</div>
 
 			<!-- Cambio de linea -->
 			<div class="saltoLinea"> </div>
 
+			<!-- ------------------------------------------- lectura de base de datos --------------------------------------------->
+<!-- bcreate element de los div con js   (append child para añadir al documento) --->
+		
 			<div class="titulo_contenido">				
 				<img src="../imagenes/iconos/agua.png" class="iconos_facciones"></img>
 				Personajes de Agua
 			</div>
 			<div class="saltoLinea"> </div>
-
+<input type="text" name="valor">
+<button onclick="Enviar();"> Enviar</button>
 			<div class="contenido_contenido">
 				<a href="#" class="a_Iconos">
 					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Agua1.png">
@@ -95,7 +102,31 @@
 				</a>
 			</div>
 
-			<div class="saltoLinea"> </div>
+
+<!--Envio de datos sin pasar por la URL  (aqui usaba acabado en .php->
+			<div>
+				<form method="POST" action="personaje_Generico.html">
+					<label> Vamos al pj generico </label>
+					<input  name="nombre">
+					<input type="submit" name="nombre" value="Enviar">
+				</form>
+			</div>
+
+
+
+<!- Valor del metodo POST   METODO 2->
+		<?php
+		$var = "nombre_pj";
+		?>
+
+-->
+
+
+
+  <!-- aqui acaba el js -->
+
+  
+			<!-- div class="saltoLinea"> </div>
 			<div class="titulo_contenido">				
 				<img src="../imagenes/iconos/aire.png" class="iconos_facciones"></img>
 				Personajes de Aire
@@ -143,7 +174,7 @@
 				<a href="#" class="a_Iconos">
 					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Neutro2.png">
 				</a>
-			</div>
+			</div-->
 
 
 		</section>

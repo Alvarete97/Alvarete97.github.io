@@ -1,3 +1,6 @@
+  
+// JS para la página de un personaje concreto
+
 
 //Recogiendo datos
 url.split(){

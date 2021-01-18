@@ -99,11 +99,37 @@
 			</div>
 			<a href="#" ><img src="../imagenes/iconos/flecha_dch.png" class="flecha_dch" /></a>
 		</div-->
+
+<?php
+if($_POST['personaje_selec']==1){
+	echo "el pesonaje es" + personaje_selec;
+}else{
+	echo "no hay pj señeccionado"
+}
+?>
+
+
+
+
+
+
 		<div class="product">
 			<img id="urli_pj" src="../imagenes/iconos/neutro.png" class="iconos_elemento" />
 		</div>
 
-			<div class="saltoLinea"> </div>
+		<!-- Valor del metodo POST   METODO 1->
+		<?php
+		echo "valor recibido: ".$_POST['nombre'];
+		?>
+
+		<!- Valor del metodo POST   METODO 2->
+		<?php
+		include("personajes.html");
+		echo "Personajes seleccionado ".$var;
+		?>
+    	-->
+    	
+		<div class="saltoLinea"> </div>
 		<div>
 			
 			<img id="url_pj" src="../imagenes/personajes/personaje.png" class="personaje_facciones">
