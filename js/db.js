@@ -14,9 +14,9 @@ app.use(cors());
 app.use(express.json());
 
 // Parametros de conexion
-const USER = "0";
-const PASSWORD = "0";
-const DATA_BASE = "0";
+const USER = "Usuario1";
+const PASSWORD = "8V3WGYylXzVLVHjO";
+const DATA_BASE = "dbTFG";
 
 // Preparando cadena de conexion
 const CONECTOR = `mongodb+srv://${USER}:${PASSWORD}@dbtfg.d4wbo.mongodb.net/${DATA_BASE}?retryWrites=true&w=majority`;
