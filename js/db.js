@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 // iniciando
 const express = require('express');
 const mongoose = require('mongoose');
@@ -9,6 +9,8 @@ require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+console.log('Serever conectado');
 
 app.use(cors());
 app.use(express.json());
@@ -25,7 +27,7 @@ const OPTIONS = {
     useUnifiedTopology: true
 };
 
-// Abriendo la conexión a mongoDB Atlas
+// Abriendo la conexiÃ³n a mongoDB Atlas
 connect(CONECTOR, OPTIONS, MongoError => {
     // si algo sale mal mostramos el error y paramos el servidor
     if (MongoError) {
@@ -39,22 +41,9 @@ connect(CONECTOR, OPTIONS, MongoError => {
             console.error(error);
             process.exit(1);
         }
-        console.log("Conexión establecida con MongoDB Altas");
+        console.log("ConexiÃ³n establecida con MongoDB Altas");
         console.log("Servidor listo");
     });
 }
 );
 
-
-/*const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://Ninetales:<password>@dbtfg.d4wbo.mongodb.net/<dbname>?retryWrites=true&w=majority";
-=======
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://Ninetales:<ContraseÃ±a>@dbtfg.d4wbo.mongodb.net/<BDD>?retryWrites=true&w=majority";
->>>>>>> 582b0be84b73ea95b082861f7ef890b9b3b1df52
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-    const collection = client.db("test").collection("devices");
-    // perform actions on the collection object
-    client.close();
-});*/

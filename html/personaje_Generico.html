@@ -15,10 +15,11 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 		<!--script src="../js/carrusel.js"></script-->
 		<script src="../js/lector.js"></script>
+		<script src="../js/url.js"></script>
 		
 	</head>
 
-	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
+	<body onload="cargar();" class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
 		
 		<!-- Contenedor de todo el contenido del html -->
 		<div id="container">
@@ -54,14 +55,14 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="#">Personajes</a></li>
+							<li><a href="personajes.html">Personajes</a></li>
 							<li><a href="escenarios.html">Escenarios</a></li>
 						</ul>
 					</li>
-					<li id="buscador">
+					<!--li id="buscador">
 						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
-						<img src="../imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
-					</input type="submit" value="buscar">
+						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
+					</input type="submit" value="buscar"-->
 				</li>
 			</ul>
 		</nav>
@@ -100,40 +101,17 @@
 			<a href="#" ><img src="../imagenes/iconos/flecha_dch.png" class="flecha_dch" /></a>
 		</div-->
 
-<?php
-if($_POST['personaje_selec']==1){
-	echo "el pesonaje es" + personaje_selec;
-}else{
-	echo "no hay pj señeccionado"
-}
-?>
-
-
-
-
-
-
+		
 		<div class="product">
-			<img id="urli_pj" src="../imagenes/iconos/neutro.png" class="iconos_elemento" />
+			<img  id="urli_pj" src="../imagenes/iconos/neutro.png" class="iconos_elemento" />
 		</div>
-
-		<!-- Valor del metodo POST   METODO 1->
-		<?php
-		echo "valor recibido: ".$_POST['nombre'];
-		?>
-
-		<!- Valor del metodo POST   METODO 2->
-		<?php
-		include("personajes.html");
-		echo "Personajes seleccionado ".$var;
-		?>
-    	-->
-    	
+	
 		<div class="saltoLinea"> </div>
+		<div id="resultado"> </div>
 		<div>
-			
-			<img id="url_pj" src="../imagenes/personajes/personaje.png" class="personaje_facciones">
-			<iframe src="datos_pj.html" class="datos_pj" frameborder="0" title="Datos de los personajes"></iframe>
+		
+			<img  id="url_pj" src="../imagenes/personajes/personaje.png" class="personaje_facciones">
+			<iframe id="iframe_datos" src="datos_pj.html" class="datos_pj" frameborder="0" title="Datos de los personajes"></iframe>
 
 		</img>
 

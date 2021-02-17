@@ -12,8 +12,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
-		<script src="../js/personajes_js.js"></script>
+		<!--script src="../js/db.js"></script-->
+		<script src="../js/cookies.js"></script>
 
 	</head>
 
@@ -61,10 +63,10 @@
 							<li><a href="escenarios.html">Escenarios</a></li>
 						</ul>
 					</li>
-					<li id="buscador">
+					<!--li id="buscador">
 						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
-						<img src="../imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
-					</input type="submit" value="buscar">
+						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
+					</input type="submit" value="buscar"-->
 				</li>
 			</ul>
 		</nav>
@@ -75,7 +77,7 @@
 		<!-- Contenido -->
 		<section id="content">
 
-	<div class="titulo_contenido">
+			<div class="titulo_contenido">
 				Listado Personajes
 			</div>
 
@@ -83,61 +85,34 @@
 			<div class="saltoLinea"> </div>
 
 			<!-- ------------------------------------------- lectura de base de datos --------------------------------------------->
-<!-- bcreate element de los div con js   (append child para añadir al documento) --->
-		
+
+			<!--  LINEA DE DEBUG  -->
+			<div id="result"> </div>
+			<!--  LINEA DE DEBUG  -->
+
+
+
+			<!-- BLOQUE MODELO DE RELLENO DE LA BDD -->
+			<div class="saltoLinea"> </div>
+
 			<div class="titulo_contenido">				
 				<img src="../imagenes/iconos/agua.png" class="iconos_facciones"></img>
 				Personajes de Agua
 			</div>
-			<div class="saltoLinea"> </div>
-<input type="text" name="valor">
-<button onclick="Enviar();"> Enviar</button>
-			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Agua1.png">
-				</a>
-				<span> </span>
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Agua2.png">
-				</a>
-			</div>
 
-
-<!--Envio de datos sin pasar por la URL  (aqui usaba acabado en .php->
-			<div>
-				<form method="POST" action="personaje_Generico.html">
-					<label> Vamos al pj generico </label>
-					<input  name="nombre">
-					<input type="submit" name="nombre" value="Enviar">
-				</form>
-			</div>
-
-
-
-<!- Valor del metodo POST   METODO 2->
-		<?php
-		$var = "nombre_pj";
-		?>
-
--->
-
-
-
-  <!-- aqui acaba el js -->
-
-  
-			<!-- div class="saltoLinea"> </div>
-			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/aire.png" class="iconos_facciones"></img>
-				Personajes de Aire
-			</div>
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Aire.png">
+				<a href="personaje_Generico.html" id="pj1" class="a_Iconos" onclick="seleccionado('Pj_Agua_1')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Agua_1.png">
+				</a>
+				<!--span style="text-decoration: none;"> </span-->
+				<a href="personaje_Generico.html" id="pj2" class="a_Iconos" onclick="seleccionado('Pj_Agua_2')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Agua_2.png">
 				</a>
 			</div>
+
+			<!-- BLOQUE MODELO DE RELLENO DE LA BDD -->
 
 
 			<div class="saltoLinea"> </div>
@@ -146,15 +121,66 @@
 				<img src="../imagenes/iconos/fuego.png" class="iconos_facciones"></img>
 				Personajes de Fuego
 			</div>
+
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Fuego1.png">
+				<a href="personaje_Generico.html" id="pj3" class="a_Iconos" onclick="seleccionado('Pj_Fuego_1')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Fuego_1.png">
 				</a>
-				<span> </span>
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Fuego2.png">
+			</div>
+
+			<div class="saltoLinea"> </div>
+
+			<div class="titulo_contenido">				
+				<img src="../imagenes/iconos/aire.png" class="iconos_facciones"></img>
+				Personajes de Aire
+			</div>
+
+			<div class="saltoLinea"> </div>
+
+			<div class="contenido_contenido">
+				<a href="personaje_Generico.html" id="pj4" class="a_Iconos" onclick="seleccionado('Pj_Aire_1')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Aire_1.png">
+				</a>
+				<a href="personaje_Generico.html" id="pj5" class="a_Iconos" onclick="seleccionado('Pj_Aire_2')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Aire_2.png">
+				</a>
+			</div>
+
+			<div class="saltoLinea"> </div>
+
+			<div class="titulo_contenido">				
+				<img src="../imagenes/iconos/planta.png" class="iconos_facciones"></img>
+				Personajes de Natura
+			</div>
+
+			<div class="saltoLinea"> </div>
+
+			<div class="contenido_contenido">
+				<a href="personaje_Generico.html" id="pj6" class="a_Iconos" onclick="seleccionado('Pj_Planta_1')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Planta_1.png">
+				</a>
+				<a href="personaje_Generico.html" id="pj7" class="a_Iconos" onclick="seleccionado('Pj_Planta_2')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Planta_2.png">
+				</a>
+			</div>
+
+			<div class="saltoLinea"> </div>
+
+			<div class="titulo_contenido">				
+				<img src="../imagenes/iconos/Roca.png" class="iconos_facciones"></img>
+				Personajes de Tierra
+			</div>
+
+			<div class="saltoLinea"> </div>
+
+			<div class="contenido_contenido">
+				<a href="personaje_Generico.html" id="pj8" class="a_Iconos" onclick="seleccionado('Pj_Roca_1')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Roca_1.png">
+				</a>
+				<a href="personaje_Generico.html" id="pj9" class="a_Iconos" onclick="seleccionado('Pj_Roca_2')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Roca_2.png">
 				</a>
 			</div>
 
@@ -162,19 +188,17 @@
 
 			<div class="titulo_contenido">				
 				<img src="../imagenes/iconos/neutro.png" class="iconos_facciones"></img>
-				Personajes sin Facción
+				Personajes de Neutro
 			</div>
+
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Neutro1.png">
+				<a href="personaje_Generico.html" id="pj10" class="a_Iconos" onclick="seleccionado('Pj_Neutro_1')">
+					<img class="icono_pj" src="../imagenes/personajes/Pj_Neutro_1.png">
 				</a>
-				<span> </span>
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/perfiles/Perfil_Neutro2.png">
-				</a>
-			</div-->
+				
+			</div>
 
 
 		</section>
