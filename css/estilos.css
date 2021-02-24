@@ -231,6 +231,12 @@ a{
 	text-align: left;
 }
 
+.historia_parrafo{
+	font-size: 16px;
+    color: #d9d4d9;
+    text-align: left;
+    padding: 2% 5%;
+}
 
 /* Cambio de elementos en versión móvil*/
 @media screen and (max-width:800px) {
