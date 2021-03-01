@@ -17,14 +17,13 @@
 
 
 
-
-	<body class="fondo" id="fondo" style="background-image: url(imagenes/fondo/banner_background.jpg);">
+	<body class="fondo" id="fondo" style="background-image: url(imagenes/fondo/fondo.jpg) !important;">
 		
 		<!-- Contenedor de todo el contenido del html -->
 		<div id="container">
 			<!-- Cabecera -->
 			<header>
-				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+				<div class="text_B"> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
 			</header>
 
 			<!-- Barra de navegación -->
@@ -38,8 +37,8 @@
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
 							<li><a href="html/teoria_color.html">Teoría del color</a></li>
-							<li><a href="#">Teoría de la forma</a></li>
-							<li><a href="#">Teoría de la composición</a></li>
+							<li><a href="html/teoria_psico.html">Lenguaje corporal</a></li>
+							<li><a href="html/teoria_autores.html">Proceso artístico</a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
@@ -47,12 +46,12 @@
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
 							<li><a href="html/historia.html">Elementos y origen</a></li>
-							<li><a href="#">Historia de la nacion</a></li>
-							<li><a href="/html/mapa.html">División actual</a></li>
+							<li><a href="html/historia_actual.html">Historia de la nacion</a></li>
+							<li><a href="html/mapa.html" id="mapa_nav">Mapa</a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseño </a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
 							<li><a href="html/personajes.html">Personajes</a></li>
@@ -67,39 +66,35 @@
 			</ul>
 		</nav>
 
+
 		<!-- Cambio de linea -->
 		<div class="saltoLinea"> </div>
 
 		<!-- Contenido -->
-		<section id="content">
+		<section id="content" style="margin: 5%;">
 			<div class="separacion_Inicio"> </div>
-			<div class="titulo_contenido">
-				Bienvenidas y bienvenidos al universo de *inserte nombre*
+			<div class="titulo_contenido text_B">
+				Bienvenidas y bienvenidos al universo de <b>Efeméride elemental</b>
 			</div>
-			<div class="contenido_contenido">
-				Este trabajo multidisplinar, basado en un trabajo de investigación previo, busca poner en práctica lo aprendido durante mi carrera.<br>
+			<div class="saltoLinea"> </div>
+			<div class="contenido_contenido text_B">
+				Este trabajo multidisplinar que busca poner en práctica lo aprendido durante mi carrera.<br>
 				Para ello, se ha plasamado la creación de un videojuegos, partiendo de sus bases más artísticas y narrativas.
 				<br>
+				Efeméride elemental, es el título de un proyecto que nos pone en la piel de múltiples habitantes de <b>Pardes</b>, un planeta lleno de vida y color que apenas ha sido descubierto.
 				<br>
-				¿Quieres conocerlo más a fondo? Puedes empezar por analizar su mapa y territorios actuales.
+				¿Quieres conocerlo más a fondo? Puedes empezar por analizar territorios actuales o sus personajes.
 			</div>
 
-			<a class="boton_inicio" href="html/mapa.html"> Ir al mapa </a>
+			<a id="btn_mapa" class="boton_inicio" href="html/mapa.html"> Mapa </a>
+			<a class="boton_inicio" href="html/personajes.html"> Personajes </a>
+			<a class="boton_inicio" href="html/escenarios.html"> Escenarios </a>
+
 		</section>
-		<!-- Contenido lateral -->
-		<aside>
-
-		</aside>
-
-		<footer class="pie_pagina">
-			Álvaro Sal TFG &copy 2020
-		</footer>
 	</div>
-
-
-
-
-
+	<!--footer class="pie_pagina">
+		Álvaro Sal TFG &copy 2020
+	</footer-->
 </body>
 
 </html>

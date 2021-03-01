@@ -12,56 +12,58 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/muestrario.js"></script>
+		<script src="../js/modal.js"></script>
+		<script src="../js/modal_pj.js"></script>
 	</head>
 
 
 
 
 
-	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/mapa.jpg);">
+	<body onload="navegar();" class="fondo" id="fondo">
 		
 		<!-- Contenedor de todo el contenido del html -->
 		<div id="container">
 			<!-- Cabecera -->
 			<header>
-				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+				<div class="encabezado"> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
 			</header>
+
+
 			<!-- Barra de navegación -->
 			<nav>
 				<ul>
 					<li class="selector">
-						<a href="../index.html"> Inicio </a>
+						<a id="inicio"></a>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<a id="teoria_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="teoria_color.html">Teoría del color</a></li>
-							<li><a href="#">Teoría de la forma</a></li>
-							<li><a href="#">Teoría de la composición</a></li>
+							<li><a id="teoria_1"></a></li>
+							<li><a id="teoria_2"></a></li>
+							<li><a id="teoria_3"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<a id="historia_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="historia.html">Elementos y origen</a></li>
-							<li><a href="#">Historia de la nacion</a></li>
-							<li><a href="#">División actual</a></li>
+							<li><a id="historia"></a></li>
+							<li><a id="narrativa"></a></li>
+							<li><a id="mapa_nav"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<a id="diseno_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="personajes.html">Personajes</a></li>
-							<li><a href="escenarios.html">Escenarios</a></li>
+							<li><a id="pj_nav"></a></li>
+							<li><a id="esc_nav"></a></li>
 						</ul>
 					</li>
-					<!--li id="buscador">
-						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
-						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
-					</input type="submit" value="buscar"-->
 				</li>
 			</ul>
 		</nav>
@@ -70,29 +72,152 @@
 		<div class="saltoLinea"> </div>
 
 
-		<iframe src="mapa_interactivo.html" class="mapa_int" frameborder="0" title="Mapa Interactivo"></iframe>
+		<!--iframe src="mapa_interactivo.html" class="mapa_int" frameborder="0" title="Mapa Interactivo"></iframe-->
+		<span class="mapa_estilo">
+			<img src="../imagenes/mapa/mapa_small.png" usemap="#image-map">
+
+			<map class="mapa_int" name="image-map">
+				<area  target="_parent" alt="Roca" title="Roca" onclick=" mostrar(this.title);" coords="54,142,52,151,46,156,43,165,46,173,47,182,53,189,62,188,74,192,81,191,84,196,93,197,97,202,108,201,119,197,116,208,111,217,111,226,112,238,107,243,101,243,88,241,82,236,68,239,70,246,77,251,86,252,95,257,95,264,90,266,88,271,81,269,73,265,63,260,58,256,60,248,51,255,52,265,59,271,62,278,68,284,75,288,78,304,67,314,73,322,78,332,70,334,62,340,71,342,82,346,93,345,99,339,113,330,123,332,138,336,146,334,146,343,163,337,171,334,179,334,187,326,198,322,202,308,217,298,221,315,235,307,246,297,258,289,269,277,271,255,269,245,280,243,279,231,290,223,302,217,303,208,316,202,329,196,332,181,340,173,340,167,325,163,323,155,323,145,326,135,317,133,319,120,312,122,302,118,294,122,290,112,281,117,276,129,270,128,266,138,256,141,262,127,252,124,251,112,244,104,248,93,231,91,240,81,234,77,216,62,200,60,197,73,192,81,186,86,178,96,178,102,172,107,168,120,156,116,154,136,144,135,134,134,126,130,119,130,114,134,109,128,103,134,95,131,89,140,81,139,73,142,64,139" shape="poly">
+				<area target="_parent" alt="Fuego" title="Fuego" onclick=" mostrar(this.title);" coords="82,445,86,435,91,424,102,420,111,415,112,407,124,400,133,399,138,404,139,392,157,390,156,383,147,378,145,355,144,341,172,331,180,332,186,324,198,320,203,306,219,297,222,311,241,298,256,290,268,275,271,253,269,245,280,243,279,228,302,217,301,228,307,235,313,240,321,247,337,252,357,254,363,257,370,254,376,268,372,278,369,296,362,297,363,309,362,315,363,321,348,339,349,348,341,351,331,368,336,381,341,386,340,395,354,409,353,419,363,432,371,441,357,437,352,431,342,425,336,412,332,422,321,416,328,407,316,403,303,405,300,414,308,415,303,428,307,446,315,449,323,446,329,456,327,471,320,478,330,481,330,490,328,508,323,518,318,511,311,502,299,499,291,503,284,503,282,516,280,523,269,519,270,501,260,499,252,503,247,491,243,487,246,471,246,447,240,448,237,439,228,443,215,426,200,424,188,421,172,429,162,448,148,442,129,447,120,443,106,445,92,459" shape="poly">
+				<area target="_parent" alt="Aire" title="Aire" onclick=" mostrar(this.title);" coords="474,179,470,174,471,165,466,156,459,140,455,128,426,115,434,132,424,129,418,131,413,140,402,143,399,150,392,151,387,155,381,149,374,152,368,146,359,149,353,153,350,147,342,158,348,165,333,180,330,200,338,196,351,205,351,212,354,226,343,226,339,233,330,238,324,246,342,254,360,257,371,256,377,268,381,289,379,304,387,305,397,305,397,293,402,292,407,283,419,279,430,274,439,275,447,268,452,277,455,265,479,251,475,234,485,218,488,207,478,201,482,190,476,185,496,172,513,177,521,179,525,199,537,204,549,207,562,212,578,216,588,226,602,223,610,217,608,209,590,209,573,215,562,205,560,198,548,190,530,175,531,162,541,153,542,146,549,147,556,136,563,128,575,128,582,121,592,120,607,110,612,100,609,91,603,101,596,87,577,91,575,99,570,96,565,103,555,101,559,114,546,117,530,117,521,123,518,115,511,115,517,100,511,104,508,110,500,109,495,116,484,115,490,129,494,138,497,148,497,158,496,171" shape="poly">
+				<area target="_parent" alt="Bosque" title="Natura" onclick=" mostrar(this.title);" coords="922,196,936,198,952,190,967,180,978,175,986,176,992,170,1004,169,1010,158,998,146,999,137,989,129,983,118,973,122,961,120,936,125,925,119,919,118,915,107,904,104,903,115,899,120,906,129,901,135,889,136,884,128,873,129,856,126,853,114,866,103,858,95,848,87,832,79,831,95,840,93,843,104,838,116,850,119,838,128,829,126,821,138,815,133,809,138,804,134,797,135,789,123,790,116,785,119,781,109,776,117,767,104,764,114,748,116,742,119,735,118,721,111,714,116,702,108,693,116,690,125,697,132,711,147,729,149,738,143,739,152,752,153,751,141,758,136,758,146,763,151,760,161,750,160,731,157,724,162,719,155,714,157,705,147,699,148,693,151,680,151,684,160,690,170,695,174,691,178,689,196,696,201,708,205,718,208,714,226,730,232,744,226,741,221,727,206,726,196,739,190,744,183,756,179,765,173,773,176,765,189,779,193,783,198,796,200,812,198,822,196,834,203,847,207,866,221,882,222,889,230,897,231,904,240,916,242,926,250,926,238,935,232,932,221,920,205" shape="poly">
+				<area target="_parent" alt="Agua" title="Agua" onclick=" mostrar(this.title);" coords="846,428,856,428,868,417,875,410,885,412,885,402,893,396,890,388,899,378,897,363,896,339,890,328,904,322,915,309,915,301,922,296,924,286,936,284,947,273,939,256,930,258,918,251,910,254,909,246,902,246,895,240,885,239,877,233,868,220,841,204,819,194,798,201,766,189,765,201,760,218,760,227,747,220,746,233,767,239,770,253,760,254,751,267,758,268,761,273,768,275,777,279,785,272,784,255,776,247,788,246,799,241,786,236,787,221,793,204,809,196,829,199,845,212,843,224,839,234,837,243,830,242,833,233,827,232,829,221,834,217,818,211,810,216,807,224,808,241,811,252,802,263,792,270,804,282,811,299,815,308,825,316,817,331,822,337,818,346,834,354,828,372,840,368,848,375,841,384,854,386,846,394,851,406,846,412" shape="poly">
+				<area target="_parent" alt="Hielo" title="Hielo" onclick=" mostrar(this.title);" coords="1084,238,1073,234,1058,238,1051,224,1045,230,1036,224,1033,209,1042,202,1048,192,1036,187,1035,175,1023,166,1021,159,1008,160,1003,168,993,168,987,176,977,176,936,199,922,197,920,204,934,222,936,232,936,240,945,241,958,251,964,262,974,269,975,277,981,281,980,288,975,295,970,303,959,304,968,327,967,334,961,335,960,343,953,347,946,354,941,364,933,363,926,367,921,367,910,382,910,398,898,416,907,425,915,420,922,421,927,404,939,400,946,411,943,428,949,431,957,423,963,430,975,434,987,427,1001,421,1008,414,1010,405,1004,396,994,387,991,379,1001,374,1013,366,1017,358,1013,352,1022,349,1030,341,1023,331,1045,317,1051,314,1037,297,1044,286,1063,284,1069,270,1078,269,1081,255,1086,249" shape="poly">
+				<area target="_parent" alt="Neutro" title="Neutro" onclick=" mostrar(this.title);" coords="650,317,643,311,629,307,624,316,616,323,617,332,606,338,596,342,595,352,602,357,608,364,620,373,625,381,636,381,635,366,647,357,638,348,638,328,643,322" shape="poly">
+
+			</map>
+		</span>
 
 		<!-- Cambio de linea -->
 		<div class="saltoLinea"> </div>
+
+
+		<!-- EL DESPLEGABLE DE PJ-->
+		<div id="myModal_pj" class="modal">
+			<span onclick=" cerrar_modal_pj();" class="close"> X </span>
+			<img class="modal-content" id="img02">
+			<a id="caption_a" href="#"><div id="caption_pj"> Conocer más sobre el personaje</div></a>
+		</div>
+
+
+		<!-- EL DESPLEGABLE-->
+		<div id="myModal" class="modal">
+			<span onclick=" cerrar_modal();" class="close"> X </span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+
+
+		<!------------------- AGUA -------------------->
+		<div id="Agua0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Agua.png" class="iconos_facciones"></img>
+			Contenido de la región del Agua
+		</div>
 		<div class="titulo_contenido">				
-			<img src="../imagenes/iconos/Agua.png" class="iconos_facciones"></img>
-			Agua
-			<img src="../imagenes/iconos/Aire.png" class="iconos_facciones"></img>
-			Aire
-			<img src="../imagenes/iconos/Fuego.png" class="iconos_facciones"></img>
-			Fuego
-			<img src="../imagenes/iconos/Hielo.png" class="iconos_facciones"></img>
-			Hielo
+			
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Agua2" alt="Pj_Agua_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Agua_1.png">
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Agua3" alt="Pj_Agua_2" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Agua_2.png">
+
+			<div class="saltoLinea"> </div>
+
+			<img onclick="desplegar(this.src,this.alt);" id="Agua4" alt="Escenario Agua 1" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Agua_1.png">
+			<img onclick="desplegar(this.src,this.alt);" id="Agua5" alt="Escenario Agua 2" class="mapa_objs icono_pj " src="../imagenes/escenarios/Escenario_Agua_2.png">
 		</div>
 		
 
+		<!------------------- ROCA -------------------->
+		<div id="Roca0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Roca.png" class="iconos_facciones"></img>
+			Contenido de la región de la Roca
+		</div>
 		<div class="titulo_contenido">				
-			<img src="../imagenes/iconos/Planta.png" class="iconos_facciones"></img>
-			Planta
-			<img src="../imagenes/iconos/Roca.png" class="iconos_facciones"></img>
-			Roca
-			<img src="../imagenes/iconos/Neutro.png" class="iconos_facciones"></img>
-			Neutro
+			
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Roca1" alt="Pj_Roca_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Roca_1.png">
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Roca2" alt="Pj_Roca_2" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Roca_2.png">
+
+			<div class="saltoLinea"> </div>
+
+			<img onclick="desplegar(this.src,this.alt);" id="Roca3" alt="Escenario Roca 1" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Roca_1.png">
+		</div>
+
+
+		<!------------------- AIRE -------------------->
+		<div id="Aire0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Aire.png" class="iconos_facciones"></img>
+			Contenido de la región del Aire
+		</div>
+		<div class="titulo_contenido">				
+			
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Aire1" alt="Pj_Roca_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Aire_1.png">
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Aire2" alt="Pj_Roca_2" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Aire_2.png">
+
+			<div class="saltoLinea"> </div>
+
+			<img onclick="desplegar(this.src,this.alt);" id="Aire3" alt="Escenario Aire 1" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Aire_1.png">
+			<img onclick="desplegar(this.src,this.alt);" id="Aire4" alt="Escenario Aire 2" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Aire_2.png">
+			<img onclick="desplegar(this.src,this.alt);" id="Aire5" alt="Escenario Aire 3" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Aire_3.png">
+		</div>
+
+
+		<!------------------- FUEGO -------------------->
+		<div id="Fuego0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Fuego.png" class="iconos_facciones"></img>
+			Contenido de la región del Fuego
+		</div>
+		<div class="titulo_contenido">				
+			
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Fuego1" alt="Pj_Fuego_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Fuego_1.png">
+
+			<div class="saltoLinea"> </div>
+
+			<!--img onclick="desplegar(this.src,this.alt);" id="Aire3" alt="Escenario Aire 1" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Aire_1.png"-->	
+		</div>
+
+
+		<!------------------- HIELO -------------------->
+		<div id="Hielo0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Hielo.png" class="iconos_facciones"></img>
+			Contenido de la región del Hielo
+		</div>
+		<div class="titulo_contenido">				
+			
+			<!--img onclick="desplegar_pj(this.src,this.alt);" id="Aire1" alt="Pj_Roca_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Aire_1.png"-->
+			
+			<div class="saltoLinea"> </div>
+
+			<img onclick="desplegar(this.src,this.alt);" id="Hielo1" alt="Escenario Hielo 1" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Hielo_1.png">
+			
+		</div>
+
+
+		<!------------------- NATURA -------------------->
+		<div id="Natura0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Planta.png" class="iconos_facciones"></img>
+			Contenido de la región de Natura
+		</div>
+		<div class="titulo_contenido">				
+			
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Natura1" alt="Pj_Planta_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Planta_1.png">
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Natura2" alt="Pj_Planta_2" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Planta_2.png">
+
+			<div class="saltoLinea"> </div>
+
+		</div>
+
+
+		<!------------------- NEUTRO -------------------->
+		<div id="Neutro0"  class="mapa_objs a_Iconos ">
+			<img  src="../imagenes/iconos/Neutro.png" class="iconos_facciones"></img>
+			Contenido del archipiélago neutral
+		</div>
+		<div class="titulo_contenido">				
+			
+			<img onclick="desplegar_pj(this.src,this.alt);" id="Neutro1" alt="Pj_Neutro_1" class="mapa_objs icono_pj" src="../imagenes/personajes/Pj_Neutro_1.png">
+			
+			<div class="saltoLinea"> </div>
+
+			<img onclick="desplegar(this.src,this.alt);" id="Neutro2" alt="Escenario Neutro 1" class="mapa_objs icono_pj" src="../imagenes/escenarios/Escenario_Neutro_1.png">
+			
 		</div>
 
 
@@ -103,14 +228,7 @@
 		<aside>
 
 		</aside>
-
-		<footer class="pie_pagina">
-			Álvaro Sal TFG &copy 2020
-		</footer>
 	</div>
-
-
-
 
 
 </body>

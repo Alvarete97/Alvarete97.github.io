@@ -1,0 +1,83 @@
+	<!doctype html>
+	<html lang="es">
+
+
+	<head>
+		<title> Personajes TFG</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/fondo.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/buscador.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="../js/carrusel.js"></script>
+		<script src="../js/nav.js"></script>
+		
+	</head>
+
+	<body onload="navegar();" class="fondo" id="fondo">
+		
+		<!-- Contenedor de todo el contenido del html -->
+		<div id="container">
+
+			<!-- Cabecera -->
+			<header>
+				<div class="encabezado"> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+			</header>
+
+			<!-- Barra de navegación -->
+			<nav>
+				<ul>
+					<li class="selector">
+						<a id="inicio"></a>
+					</li>
+					<li class="selector dropdown">
+						<a id="teoria_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a id="teoria_1"></a></li>
+							<li><a id="teoria_2"></a></li>
+							<li><a id="teoria_3"></a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a id="historia_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a id="historia"></a></li>
+							<li><a id="narrativa"></a></li>
+							<li><a id="mapa_nav"></a></li>
+						</ul>
+					</li>
+					<li class="selector dropdown">
+						<a id="diseno_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
+						<span class="caret"></span><br>
+						<ul class="dropdown-menu">
+							<li><a id="pj_nav"></a></li>
+							<li><a id="esc_nav"></a></li>
+						</ul>
+					</li>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Cambio de linea -->
+		<div class="saltoLinea"> </div>
+
+		<!-- Contenido -->
+		<div class="container">
+			<img src="../imagenes/referencias/tu_habla_Ovejero.jpg" class="icono_libros">
+			<div class="libros_cita text_B"> Ovejero, J. L. (2019). Tu habla que yo te veo, ed. Aguilar.</div>
+			<br>
+			<div class="libros_justificacion text_C"> Para la elaboración, principalmente, de las imágenes de referencia de cada personaje es necesario que con su acción transmitan parte de su personalidad. <br> Esto permite que el espectador ya presienta como va a ser el personaje sin tener que leerlo es por ello que se entra en juego el lenguaje corporal.</div>
+			<!-- Cambio de linea -->
+			<div class="saltoLinea"> </div>
+
+		</div>
+
+	</div>
+</body>
+</html>

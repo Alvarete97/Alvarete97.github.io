@@ -14,6 +14,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 		<script src="../js/carrusel.js"></script>
+		<script src="../js/nav.js"></script>
 		
 	</head>
 
@@ -21,51 +22,47 @@
 
 
 
-	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
+	<body onload="navegar();" class="fondo" id="fondo">
 		
 		<!-- Contenedor de todo el contenido del html -->
 		<div id="container">
 			<!-- Cabecera -->
 			<header>
-				<div> Historia de ------------- </div>
+				<div class="encabezado"> Historia de Pardes </div>
 			</header>
 
 			<!-- Barra de navegación -->
 			<nav>
 				<ul>
 					<li class="selector">
-						<a class="active" href="#"> Inicio </a>
+						<a id="inicio"></a>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<a id="teoria_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="teoria_color.html">Teoría del color</a></li>
-							<li><a href="#">Teoría de la forma</a></li>
-							<li><a href="#">Teoría de la composición</a></li>
+							<li><a id="teoria_1"></a></li>
+							<li><a id="teoria_2"></a></li>
+							<li><a id="teoria_3"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<a id="historia_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="#">Elementos y origen</a></li>
-							<li><a href="#">Historia de la nacion</a></li>
-							<li><a href="mapa.html">División actual</a></li>
+							<li><a id="historia"></a></li>
+							<li><a id="narrativa"></a></li>
+							<li><a id="mapa_nav"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<a id="diseno_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="personajes.html">Personajes</a></li>
-							<li><a href="escenarios.html">Escenarios</a></li>
+							<li><a id="pj_nav"></a></li>
+							<li><a id="esc_nav"></a></li>
 						</ul>
 					</li>
-					<!--li id="buscador">
-						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
-						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
-					</input type="submit" value="buscar"-->
 				</li>
 			</ul>
 		</nav>
@@ -106,10 +103,6 @@
 		<aside>
 
 		</aside>
-
-		<footer class="pie_pagina">
-			Álvaro Sal TFG &copy 2020
-		</footer>
 	</div>
 
 

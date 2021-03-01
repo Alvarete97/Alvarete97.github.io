@@ -12,56 +12,56 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="../js/nav.js"></script>
+		<script src="../js/modal.js"></script>
 	</head>
 
 
 
 
 
-	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
+	<body onload="navegar();" class="fondo" id="fondo">
 		
 		<!-- Contenedor de todo el contenido del html -->
 		<div id="container">
 			<!-- Cabecera -->
 			<header>
-				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+				<div class="encabezado"> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
 			</header>
+
+
 			<!-- Barra de navegación -->
 			<nav>
 				<ul>
 					<li class="selector">
-						<a href="../index.html"> Inicio </a>
+						<a id="inicio"></a>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<a id="teoria_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="teoria_color.html">Teoría del color</a></li>
-							<li><a href="#">Teoría de la forma</a></li>
-							<li><a href="#">Teoría de la composición</a></li>
+							<li><a id="teoria_1"></a></li>
+							<li><a id="teoria_2"></a></li>
+							<li><a id="teoria_3"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<a id="historia_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="#">Elementos y origen</a></li>
-							<li><a href="#">Historia de la nacion</a></li>
-							<li><a href="mapa.html">División actual</a></li>
+							<li><a id="historia"></a></li>
+							<li><a id="narrativa"></a></li>
+							<li><a id="mapa_nav"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<a id="diseno_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="personajes.html">Personajes</a></li>
-							<li><a href="#">Escenarios</a></li>
+							<li><a id="pj_nav"></a></li>
+							<li><a id="esc_nav"></a></li>
 						</ul>
 					</li>
-					<!--li id="buscador">
-						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
-						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
-					</input type="submit" value="buscar"-->
 				</li>
 			</ul>
 		</nav>
@@ -71,6 +71,14 @@
 
 		<section id="content">
 
+			<!-- EL DESPLEGABLE-->
+			<div id="myModal" class="modal">
+				<span onclick=" cerrar_modal();" class="close"> X </span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+
+
 			<div class="titulo_contenido">
 				Listado Escenarios
 			</div>
@@ -79,81 +87,90 @@
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/agua.png" class="iconos_facciones"></img>
-				Escenarios de Agua
+				<img src="../imagenes/iconos/Agua.png" class="iconos_facciones"></img>
+				Dominios de Agua
 			</div>
 
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/escenarios/Escenario_Agua1.png">
-				</a>
+				
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Agua 1" class="icono_pj" src="../imagenes/escenarios/Escenario_Agua_1.png">
+
 				<span> </span>
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/escenarios/Escenario_Agua2.png">
-				</a>
+
+				<img  onclick="desplegar(this.src,this.alt);" alt="Escenario Agua 2" class="icono_pj " src="../imagenes/escenarios/Escenario_Agua_2.png">
+
 			</div>
 
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/aire.png" class="iconos_facciones"></img>
-				Escenarios de Aire
+				<img src="../imagenes/iconos/Aire.png" class="iconos_facciones"></img>
+				Dominios de Aire
 			</div>
 			
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/escenarios/Escenario_Hielo1.png">
-				</a>
+
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Aire 1" class="icono_pj " src="../imagenes/escenarios/Escenario_Aire_1.png">
+
+				<span> </span>
+
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Aire 2" class="icono_pj modal_esc" src="../imagenes/escenarios/Escenario_Aire_2.png">
+
+				<span> </span>
+
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Aire 3" class="icono_pj" src="../imagenes/escenarios/Escenario_Aire_3.png">
+
 			</div>
 
 
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/fuego.png" class="iconos_facciones"></img>
-				Escenarios de Tierra
+				<img src="../imagenes/iconos/Roca.png" class="iconos_facciones"></img>
+				Dominios de Tierra
 			</div>
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/escenarios/Escenario_Desierto1.png">
-				</a>
+
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Tierra 1" class="icono_pj" src="../imagenes/escenarios/Escenario_Roca_1.png">
+
 			</div>
 
 			<div class="saltoLinea"> </div>
 
+			<div class="titulo_contenido">				
+				<img src="../imagenes/iconos/Hielo.png" class="iconos_facciones"></img>
+				Dominios de Hielo
+			</div>
+			<div class="saltoLinea"> </div>
+
+			<div class="contenido_contenido">
+
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Hielo 1" class="icono_pj" src="../imagenes/escenarios/Escenario_Hielo_1.png">
+
+			</div>
+
+			<div class="saltoLinea"> </div>
 			<div class="titulo_contenido">				
 				<img src="../imagenes/iconos/neutro.png" class="iconos_facciones"></img>
-				Escenarios sin Facción
+				Archipiélago neutral
 			</div>
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="#" class="a_Iconos">
-					<img class="icono_pj" src="../imagenes/escenarios/Escenario_Neutro1.png">
-				</a>
+
+				<img onclick="desplegar(this.src,this.alt);" alt="Escenario Neutro 1" class="icono_pj" src="../imagenes/escenarios/Escenario_Neutro_1.png">
+
 			</div>
 
 
 		</section>
-
-		<aside>
-
-		</aside>
-
-		<footer class="pie_pagina">
-			Álvaro Sal TFG &copy 2020
-		</footer>
 	</div>
-
-
-
-
 
 </body>
 

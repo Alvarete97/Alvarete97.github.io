@@ -1,7 +1,6 @@
 	<!doctype html>
 	<html lang="es">
 
-
 	<head>
 		<title> Personajes TFG</title>
 		<meta charset="utf-8">
@@ -13,60 +12,55 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-
 		<!--script src="../js/db.js"></script-->
 		<script src="../js/cookies.js"></script>
+		<script src="../js/nav.js"></script>
 
 	</head>
 
 
 
-
-
-	<body class="fondo" id="fondo" style="background-image: url(../imagenes/fondo/banner_background.jpg);">
+	<body onload="navegar();" class="fondo" id="fondo" >
 		
 		<!-- Contenedor de todo el contenido del html -->
 		<div id="container">
 			<!-- Cabecera -->
 			<header>
-				<div> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
+				<div class="encabezado"> TFG - Enciclopedia web de personajes y escenarios en un videojuego </div>
 			</header>
+
 			<!-- Barra de navegación -->
 			<nav>
 				<ul>
 					<li class="selector">
-						<a href="../index.html"> Inicio </a>
+						<a id="inicio"></a>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Teoría </a>
+						<a id="teoria_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="teoria_color.html">Teoría del color</a></li>
-							<li><a href="#">Teoría de la forma</a></li>
-							<li><a href="#">Teoría de la composición</a></li>
+							<li><a id="teoria_1"></a></li>
+							<li><a id="teoria_2"></a></li>
+							<li><a id="teoria_3"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Historia </a>
+						<a id="historia_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="historia.html">Elementos y origen</a></li>
-							<li><a href="#">Historia de la nacion</a></li>
-							<li><a href="mapa.html">División actual</a></li>
+							<li><a id="historia"></a></li>
+							<li><a id="narrativa"></a></li>
+							<li><a id="mapa_nav"></a></li>
 						</ul>
 					</li>
 					<li class="selector dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Diseños </a>
+						<a id="diseno_nav" class="dropdown-toggle" data-toggle="dropdown" href="#"></a>
 						<span class="caret"></span><br>
 						<ul class="dropdown-menu">
-							<li><a href="#">Personajes</a></li>
-							<li><a href="escenarios.html">Escenarios</a></li>
+							<li><a id="pj_nav"></a></li>
+							<li><a id="esc_nav"></a></li>
 						</ul>
 					</li>
-					<!--li id="buscador">
-						<input id="input_buscador" placeholder="Buscar..." type="text" name="">
-						<img src="imagenes/iconos/lupa.png" style="max-width: 20px;"></img>
-					</input type="submit" value="buscar"-->
 				</li>
 			</ul>
 		</nav>
@@ -77,48 +71,34 @@
 		<!-- Contenido -->
 		<section id="content">
 
-			<div class="titulo_contenido">
-				Listado Personajes
-			</div>
+			<div class="titulo_contenido"> Listado Personajes </div>
 
-			<!-- Cambio de linea -->
-			<div class="saltoLinea"> </div>
-
-			<!-- ------------------------------------------- lectura de base de datos --------------------------------------------->
-
-			<!--  LINEA DE DEBUG  -->
-			<div id="result"> </div>
-			<!--  LINEA DE DEBUG  -->
-
-
-
-			<!-- BLOQUE MODELO DE RELLENO DE LA BDD -->
+			<!-- ------------------------------------------- BLOQUE MODELO DE RELLENO DE LA BDD --------------------------------------------->
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/agua.png" class="iconos_facciones"></img>
+				<img src="../imagenes/iconos/agua.png" class="iconos_facciones" id="agua"></img>
 				Personajes de Agua
 			</div>
 
 			<div class="saltoLinea"> </div>
 
 			<div class="contenido_contenido">
-				<a href="personaje_Generico.html" id="pj1" class="a_Iconos" onclick="seleccionado('Pj_Agua_1')">
+				<a  href="personaje_Generico.html" id="pj1" class="a_Iconos" onclick="seleccionado('Pj_Agua_1')">
 					<img class="icono_pj" src="../imagenes/personajes/Pj_Agua_1.png">
 				</a>
-				<!--span style="text-decoration: none;"> </span-->
 				<a href="personaje_Generico.html" id="pj2" class="a_Iconos" onclick="seleccionado('Pj_Agua_2')">
 					<img class="icono_pj" src="../imagenes/personajes/Pj_Agua_2.png">
 				</a>
 			</div>
 
-			<!-- BLOQUE MODELO DE RELLENO DE LA BDD -->
+			<!-- ------------------------------------------- BLOQUE MODELO DE RELLENO DE LA BDD --------------------------------------------->
 
 
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/fuego.png" class="iconos_facciones"></img>
+				<img src="../imagenes/iconos/fuego.png" class="iconos_facciones" id="fuego"></img>
 				Personajes de Fuego
 			</div>
 
@@ -133,7 +113,7 @@
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/aire.png" class="iconos_facciones"></img>
+				<img src="../imagenes/iconos/aire.png" class="iconos_facciones" id="aire"></img>
 				Personajes de Aire
 			</div>
 
@@ -151,7 +131,7 @@
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/planta.png" class="iconos_facciones"></img>
+				<img src="../imagenes/iconos/planta.png" class="iconos_facciones" id="natura"></img>
 				Personajes de Natura
 			</div>
 
@@ -169,7 +149,7 @@
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/Roca.png" class="iconos_facciones"></img>
+				<img src="../imagenes/iconos/Roca.png" class="iconos_facciones" id="roca"></img>
 				Personajes de Tierra
 			</div>
 
@@ -187,7 +167,7 @@
 			<div class="saltoLinea"> </div>
 
 			<div class="titulo_contenido">				
-				<img src="../imagenes/iconos/neutro.png" class="iconos_facciones"></img>
+				<img src="../imagenes/iconos/neutro.png" class="iconos_facciones" id="neutro"></img>
 				Personajes de Neutro
 			</div>
 
@@ -199,23 +179,8 @@
 				</a>
 				
 			</div>
-
-
 		</section>
-		<!-- Contenido lateral -->
-		<aside>
-
-		</aside>
-
-		<footer class="pie_pagina">
-			Álvaro Sal TFG &copy 2020
-		</footer>
 	</div>
-
-
-
-
-
 </body>
 
 </html>

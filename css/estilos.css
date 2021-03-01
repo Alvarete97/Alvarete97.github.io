@@ -1,16 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Tangerine&family=Quintessential&display=swap');
 /*Anular el estilo genérico*/
+
 *{
 	margin: 0px;
 	padding: 0px;
 }
 
-body{
-	font-family: Arial, Helvetica, Sans-serif;
-}
 
+div{
+	font-family: 'Quintessential', cursive;
+}
+div div{
+	font-family: 'Tangerine', cursive;
+}
+.text_A{
+	font-family: 'Tangerine', cursive;
+}
+.text_B{
+
+	font-family: 'Quintessential', cursive;
+}
+.text_C{
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background-image: url(../imagenes/fondo/fondo.jpg);
+}
 #container{
 	width: 100%;
 	border: 1px black;
+}
+
+footer{
+
+	position:fixed;
+	bottom: 0;
+	color: grey !important;
 }
 
 header{
@@ -25,7 +50,6 @@ header{
 nav{
 	float: left;
 	background-color: #1e1e1e;
-	/*min-height: 70px;*/
 	width: 100%;
 }
 
@@ -34,6 +58,11 @@ nav ul li{
 	list-style: none;
 	padding: 1%;
 	text-decoration: none;
+}
+
+.dropdown-menu>li>a:hover {
+	text-decoration: none;
+	background-color: #2f2f2f !important;
 }
 .selector{
 	width: 15%;
@@ -64,7 +93,7 @@ a{
 	background-color: #717171 !important;
 }
 .separacion_Inicio{
-	height: 300px;
+	height: 200px;
 }
 .titulo_contenido{
 	text-align: center;
@@ -131,19 +160,19 @@ a{
 
 .icono_pj{
 
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	max-width: 20%;	 
+	filter: brightness(0.5)blur(3px);
+	max-width: 25%;
+	margin: 1%; 
 }
 
 .icono_pj:hover {
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);	 
+	filter: brightness(1)blur(0)drop-shadow(0px 0px 10px white);
 }
 
 .a_Iconos{
 	width: fit-content;
 	height: fit-content;
+	text-decoration: none !important;
 }
 
 .iconos_facciones{
@@ -223,19 +252,120 @@ a{
 	font-size: 20px;
 	margin-top: 20px;
 	font-style: italic;
-    font-weight: bolder;
+	font-weight: bolder;
 }
 .libros_justificacion{
 	font-size: 16px;
 	color: #d9d4d9;
 	text-align: left;
+	margin-left: 25%;
 }
 
 .historia_parrafo{
 	font-size: 16px;
-    color: #d9d4d9;
-    text-align: left;
-    padding: 2% 5%;
+	color: #d9d4d9;
+	text-align: left;
+	padding: 2% 5%;
+}
+.datos_pj{
+	color: white;
+	font-size: 30px;
+	text-align: left;
+	padding: 15px;
+}
+.datos_pj div span{
+	font-family: Arial;
+	font-size: 15px;
+	color: grey;
+	font-weight: bold;
+}
+.encabezado{
+	font-family: 'Quintessential', cursive;
+}
+.mapa_estilo{
+	filter: grayscale(1);
+}
+.mapa_estilo:hover{
+	filter: grayscale(0);
+}
+.a_mapa{
+	filter: grayscale(1);
+}
+.a_mapa:hover{
+	filter: grayscale(0);
+}
+
+
+/*---------------Seccion de zoom imagen escenarios------------*/
+
+.modal{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding: 5%; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	max-height: -webkit-fill-available;
+	max-width: -webkit-fill-available;
+}
+#caption, #caption_pj{
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	height: 150px;
+}
+ .modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+}
+.close {
+	position: absolute;
+	top: 15px !important;
+	right: 35px !important;
+	color: white !important;
+	font-size: 40px !important;
+	font-weight: bold !important;
+	font-family: arial !important;
+	transition: 0.3s !important;
+	text-decoration: none !important;
+	text-shadow: 0 1px 0 #fff !important;
+	opacity: 1 !important;
+}
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*---------------Fin seccion de zoom imagen escenarios------------*/
+
+.mapa_objs{
+	display: none;font-size: 20px;color: white;
 }
 
 /* Cambio de elementos en versión móvil*/
@@ -243,6 +373,12 @@ a{
 	nav{
 		width: 100%;
 		padding: 2% 5px;
+	}
+	.modal{
+		padding-top: 25%;
+	}
+	.modal-content {
+		width: 100%;
 	}
 	.selector{
 		width: 100%;
@@ -266,7 +402,8 @@ a{
 	.icono_pj{
 
 		filter: grayscale(0%);
-		max-width: 60%;	 
+		max-width: 60%;
+		margin: 5px;	 
 	}
 	.iconos_facciones{
 		max-width:15%;
@@ -299,6 +436,15 @@ a{
 	}
 	.libros_justificacion{		
 		text-align: center;
+		margin-left: auto;
 	}
-
+	.mapa_estilo{
+		display: none;
+	}
+	#mapa_nav{
+		display: none;
+	}
+	#btn_mapa{
+		display: none;
+	}
 }
