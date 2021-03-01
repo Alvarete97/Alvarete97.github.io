@@ -261,11 +261,18 @@ a{
 	margin-left: 25%;
 }
 
+.historia_titulo{
+	font-size: 30px;
+	font-family: 'Quintessential', cursive;
+	color: white;
+}
+
 .historia_parrafo{
 	font-size: 16px;
 	color: #d9d4d9;
 	text-align: left;
-	padding: 2% 5%;
+	padding: 2% 5%;	
+	font-family: 'Open Sans', sans-serif;
 }
 .datos_pj{
 	color: white;
@@ -367,6 +374,7 @@ a{
 .mapa_objs{
 	display: none;font-size: 20px;color: white;
 }
+
 
 /* Cambio de elementos en versión móvil*/
 @media screen and (max-width:800px) {
