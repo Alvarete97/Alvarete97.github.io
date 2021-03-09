@@ -1,5 +1,5 @@
 
-const num_pj = 10;
+const num_pj = 12;
 
 function seleccionado(v){
 	localStorage.selected = v;

@@ -17,6 +17,7 @@
 		<script src="../js/lector.js"></script>
 		<script src="../js/url.js"></script>
 		<script src="../js/nav.js"></script>
+		<script src="../js/modal.js"></script>
 		
 	</head>
 
@@ -70,7 +71,12 @@
 
 		<!-- Cambio de linea -->
 		<div class="saltoLinea"> </div>
-
+		<!-- EL DESPLEGABLE-->
+		<div id="myModal" class="modal">
+			<span onclick=" cerrar_modal();" class="close"> X </span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
 		<!-- Cuerpo de la pagina -->		
 		<div class="product">
 			<img  id="urli_pj" src="../imagenes/iconos/neutro.png" class="iconos_elemento" />
@@ -79,11 +85,11 @@
 		<div class="saltoLinea"> </div>
 
 		<div>
-			<img  id="url_pj" src="../imagenes/personajes/personaje.png" class="personaje_facciones">
+			<img onclick="desplegar(this.src,this.alt);" id="url_pj" src="../imagenes/personajes/personaje.png" class="personaje_facciones">
 			<iframe id="iframe_datos" src="datos_pj.html" class="datos_pj" scrolling="auto" frameborder="0" title="Datos de los personajes"></iframe>
 		</img>
 	</div>
-
+	<div class="saltoLinea"> </div><div class="saltoLinea"> </div>
 	<footer class="pie_pagina">
 		Álvaro Sal TFG &copy 2020
 	</footer>
