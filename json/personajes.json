@@ -1,0 +1,42 @@
+[
+  "Pj_Agua_1" {
+    "name": "Kit",
+    "age": 17,
+    "nation": "Agua",
+    "gender": "Masculino",
+    "personality": "Introvertido,amable y sensible, pero con una confianza en sí mismo que no duda en demostrar cuando la ocasión lo necesita",
+    "main": "Un chico del elemento agua, que utiliza sus conocimientos sobre ella para invocar a dos zorros acompañantes y fortalecer su capacidad ofensiva",
+    "desing": "Basado en el mito del kitsune, emplea los colores azules para además de vincularlo con el agua, para expresar su serenidad,acompañando a su conjunto blanco y negro, expresa simpleza y pureza. Es el más joven de los aventureros de esta historia. Su actitud amable y pura que no dudará en cambiar si necesita salvar a quienes le importan",   
+  },
+  "Pj_Agua_2"{
+    
+    "name": "Kawa y Umi",
+    "age": "unknown",
+    "nation": "Agua",
+    "gender": "unknown",
+    "personality": "traviesos y juguetones",
+    "main": "Dos zorros de agua invocados por Kit que le acompañan y ayudan a lo largo de sus aventuras",
+    "desing": "Para fortalecer el diseño basado en el mito del kitsune de su acompañante y creador, estas dos criaturas buscan representar agua tomando forma, con ello se emplean gamas de azules y verdes que representarán los reflejos de su entorno,  y conservar mayormente trasparencias",   
+  },
+  {
+    "id": "Pj_Aire_1",
+    "name": "Orrin",
+    "age": 24,
+    "nation": "Aire",
+    "gender": "Masculino",
+    "personality": "Arrogante y altivo, pero de buen  corazón",
+    "main": "Un joven de elemento aire, con una gran convicción por sus creencias,de familia de clase alta busca superar la reputación familiar y seguir enalteciendo el legado familiar",
+    "desing": "Basado en el signo zodiacal Tauro, busca representar ambición y caballerosidad, a la \"antigua\", inspirado por la paleta de \"El orgullo\" de Heller adornado con elementos cristalinos que representen la esencia del aire con el lujo de los elementos en oro",   
+  },
+  {
+    "id": "Pj_Aire_2",
+    "name": "Aisa",
+    "age": 18,
+    "nation": "Aire",
+    "gender": "Femenino",
+    "personality": "Traviesa, altiva y rencorosa",
+    "main": "",
+    "desing": "",   
+  }
+ 
+]
