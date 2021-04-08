@@ -53,8 +53,8 @@ var pj_4 = new datos_pj(
 	"Aire",
 	"Femenino",
 	"Traviesa, altiva y rencorosa",
-	"",
-	""
+	"De familia dedicada a los asuntos del orden y gobierno de la ciudad, es de pequeña introducida en una academia del Las tejedoras, una institución conocida por su tinte agresivo. Estas condiciones le dan unas características más agresivas que al resto de protagonistas.Fue elegida tras graduarse 'cum laude' en la academia y la influencia familiar, se embarca en un viaje que dará un vuelco a su vida",
+	"El diseño muy inspirado en la cultura griega y en el mito de las tejedoras, su gama de colores busca por una parte representar con el dorado la alta cuna social de la que proviene en contraste con el blanco típico de las cultura de Aether, que busca verse como la nación mas ejemplar, esto además sirve como juego de purea contrarrestando su retorcida mente."
 	);
 
 var pj_5 = new datos_pj(
@@ -65,7 +65,7 @@ var pj_5 = new datos_pj(
 	"Femenino",
 	"Decidida y valiente, no teme hacerse valer cuando algo no le parece correcto",
 	"Una joven de elemento fuego, marginada por su condición de nacimiento y tras vivir en las sombras de su ciudad natal, cambia su nombre y decide entrar al culto de Lilith para empezar una nueva vida, un culto consagrado a la figura femenina en el que busca por fin poder ser reconocida como lo que siempre fue",
-	"Basada en el concepto de Lilth y su condición como primer esposa bíblica, "
+	"Basada en el concepto de Lilth y su condición como primer esposa bíblica, busca expresar un diseño de novia, pero en colores inspirados en rescollos de una hogera"
 	);
 
 
@@ -75,9 +75,9 @@ var pj_6 = new datos_pj(
 	17,
 	"Roca",
 	"Masculino",
-	"",
-	"",
-	""
+	"Aventurero y charlatan, resulta ser el alma de la fiesta en cada reunión. Es el rebelde de los dos",
+	"Criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
+	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar y por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
 	);
 
 
@@ -87,9 +87,9 @@ var pj_7 = new datos_pj(
 	18,
 	"Roca",
 	"Masculino",
-	"",
-	"",
-	""
+	"Sereno e introvertido, es la parte calmada de los hermanos ",
+	"Criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
+	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar y por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
 	);
 
 
@@ -99,9 +99,9 @@ var pj_8 = new datos_pj(
 	21,
 	"Natura",
 	"Femenino",
-	"",
-	"",
-	""
+	"Tranquila, amable y risueña",
+	"Elegida por su tribu para representarlos logra conquistar el corazón de los habitantes de la capital durante la selección. Gracias a su despliegue del control vegetal, su amabilidad y aprecio por las artes.",
+	"De naturaleza optimista, tranquila y relajada, su diseño inspirado en ropas tribales y paleta de tonos verdes y orgánicas que evoquen los colores de los bosques"
 	);
 
 
@@ -111,9 +111,9 @@ var pj_9 = new datos_pj(
 	24,
 	"Natura",
 	"Masculino",
-	"",
-	"",
-	""
+	"Bonachón, amable y confiado",
+	"Amable y carismático, gana el respeto de su tribu gracias a sus altruistas hazañas, su amabilidad y habilidades de comunicación que le lograron tam´bién la victoria en el concurso de selección de representantes",
+	"Su diseño se mantiene instiprado en ropas tribales con la inspiracón cromatica de los bosques y sus colores"
 	);
 
 
