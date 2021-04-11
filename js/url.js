@@ -14,8 +14,8 @@ function cargar(){
 		document.getElementById('url_pj').src  = "../imagenes/personajes/" + valor_url + ".png";
 		document.getElementById('urli_pj').src  = "../imagenes/iconos/" + valor_urli + ".png";
 		document.getElementById('iframe_datos').src  = "datos_pj.html#" + valor_url;
-		console.log(valor_url + " -> fuera del iframe");
-		console.log(valor_urli + " -> fuera del iframe");
+		//console.log(valor_url + " -> fuera del iframe");
+		//console.log(valor_urli + " -> fuera del iframe");
 	}else{
 		console.log("valor no definido fuera del iframe");
 	}

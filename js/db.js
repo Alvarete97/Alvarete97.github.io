@@ -1,4 +1,4 @@
-
+/*
 
 // iniciando
 const express = require('express');
@@ -46,4 +46,4 @@ connect(CONECTOR, OPTIONS, MongoError => {
     });
 }
 );
-
+*/
