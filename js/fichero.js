@@ -107,7 +107,7 @@ var pj_8 = new datos_pj(
 
 var pj_9 = new datos_pj(
 	"Pj_Planta_2",
-	"",
+	"Taiyari",
 	24,
 	"Natura",
 	"Masculino",
@@ -123,9 +123,9 @@ var pj_10 = new datos_pj(
 	23,
 	"Desconocida",
 	"Masculino",
-	"",
-	"",
-	""
+	"Enigmático y reservado",
+	"Vive rodeado de enigmas en torno a su persona, sin parientes cercanos a los que acudir, vive una vida modesta y nómada con una simple frase como método de vida: <i> 'Que el caos sea tu fuerza, y el orden tu camino'</i>",
+	" De tonos apagados y poco llamativos, busca un estilo que no destaque con el fin de camuflarse entre todos los sitios que visita. Sus escasas pertenencias familiares son unos brazales y dos armas gemelas, las cuales suele llevar ocultas. Su diseño busca además resaltar la dualidad de inocencia y el peso de la misión que le aguarda. Mantener vivo el legado de toda una nación que poco a poco se ha ido extinguiendo. Sensaciones que remarcan su vestimenta oscura (el peso interior) ocultado por su capa de pureza e inicencia (Capa blanca) que puede usar para 'protegerse' en la multitud y pasar desapercibido."
 	);
 
 
@@ -135,9 +135,9 @@ var pj_11 = new datos_pj(
 	"Desconocida",
 	"Desconocida",
 	"Femenino",
-	"",
-	"",
-	""
+	"Pausada y serena",
+	"Una criatura mítica que se dice solo se aparece a quien es digno de consagrarse a Dorne",
+	"De color puramente blanco busca representar la forma más tangible de la pureza, magestuosa e imponente. Los toques de negro dentro de su cabeza ejemplifican las impurezas adquiridas en su vida pasada y que no supo solventar"
 	);
 
 
