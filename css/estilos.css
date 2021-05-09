@@ -34,6 +34,7 @@ div div{
 }
 body{
 	background-image: url(../imagenes/fondo/fondo.jpg);
+	font-size: 18px !important;
 }
 #container{
 	width: 100%;
@@ -381,7 +382,7 @@ a{
 /*---------------Fin seccion de zoom imagen escenarios------------*/
 
 .mapa_objs{
-	display: none;font-size: 20px;color: white;
+	display: none;font-size: 30px;color: white;
 }
 
 
