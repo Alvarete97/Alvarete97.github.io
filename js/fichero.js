@@ -54,7 +54,7 @@ var pj_4 = new datos_pj(
 	"Femenino",
 	"Traviesa, altiva y rencorosa",
 	"De familia dedicada a los asuntos del orden y gobierno de la ciudad, es de pequeña introducida en una academia del Las tejedoras, una institución conocida por su tinte agresivo. Estas condiciones le dan unas características más agresivas que al resto de protagonistas.Fue elegida tras graduarse 'cum laude' en la academia y la influencia familiar, se embarca en un viaje que dará un vuelco a su vida",
-	"El diseño muy inspirado en la cultura griega y en el mito de las tejedoras, su gama de colores busca por una parte representar con el dorado la alta cuna social de la que proviene en contraste con el blanco típico de las cultura de Aether, que busca verse como la nación mas ejemplar, esto además sirve como juego de purea contrarrestando su retorcida mente."
+	"El diseño muy inspirado en la cultura griega y en el mito de las tejedoras, su gama de colores busca por una parte representar con el dorado la alta cuna social de la que proviene en contraste con el blanco típico de las cultura de Aether, que busca verse como la nación mas ejemplar, esto además sirve como juego de purea contrarrestando su retorcida mente de estratega."
 	);
 
 var pj_5 = new datos_pj(
@@ -72,12 +72,12 @@ var pj_5 = new datos_pj(
 var pj_6 = new datos_pj(
 	"Pj_Roca_1",
 	"Abis",
-	17,
+	18,
 	"Roca",
 	"Masculino",
 	"Aventurero y charlatan, resulta ser el alma de la fiesta en cada reunión. Es el rebelde de los dos",
-	"Criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
-	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar y por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
+	"Onix y Abis, criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
+	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar. Por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
 	);
 
 
@@ -88,8 +88,8 @@ var pj_7 = new datos_pj(
 	"Roca",
 	"Masculino",
 	"Sereno e introvertido, es la parte calmada de los hermanos ",
-	"Criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
-	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar y por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
+	"Abis y Onix, criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
+	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar. Por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
 	);
 
 
@@ -112,7 +112,7 @@ var pj_9 = new datos_pj(
 	"Natura",
 	"Masculino",
 	"Bonachón, amable y confiado",
-	"Amable y carismático, gana el respeto de su tribu gracias a sus altruistas hazañas, su amabilidad y habilidades de comunicación que le lograron tam´bién la victoria en el concurso de selección de representantes",
+	"Amable y carismático, gana el respeto de su tribu gracias a sus altruistas hazañas, su amabilidad y habilidades de comunicación que le lograron también la victoria en el concurso de selección de representantes",
 	"Su diseño se mantiene instiprado en ropas tribales con la inspiracón cromatica de los bosques y sus colores"
 	);
 
@@ -125,7 +125,7 @@ var pj_10 = new datos_pj(
 	"Masculino",
 	"Enigmático y reservado",
 	"Vive rodeado de enigmas en torno a su persona, sin parientes cercanos a los que acudir, vive una vida modesta y nómada con una simple frase como método de vida: <i> 'Que el caos sea tu fuerza, y el orden tu camino'</i>",
-	" De tonos apagados y poco llamativos, busca un estilo que no destaque con el fin de camuflarse entre todos los sitios que visita. Sus escasas pertenencias familiares son unos brazales y dos armas gemelas, las cuales suele llevar ocultas. Su diseño busca además resaltar la dualidad de inocencia y el peso de la misión que le aguarda. Mantener vivo el legado de toda una nación que poco a poco se ha ido extinguiendo. Sensaciones que remarcan su vestimenta oscura (el peso interior) ocultado por su capa de pureza e inicencia (Capa blanca) que puede usar para 'protegerse' en la multitud y pasar desapercibido."
+	"De tonos apagados y poco llamativos, busca un estilo que no destaque con el fin de camuflarse entre todos los sitios que visita. Sus escasas pertenencias familiares son unos brazales y dos armas gemelas, las cuales suele llevar ocultas. Su diseño busca además resaltar la dualidad de inocencia y el peso de la misión que le aguarda. Mantener vivo el legado de toda una nación que poco a poco se ha ido extinguiendo. Sensaciones que remarcan su vestimenta oscura (el peso interior) ocultado por su capa de pureza e inicencia (Capa blanca) que puede usar para 'protegerse' en la multitud y pasar desapercibido."
 	);
 
 
