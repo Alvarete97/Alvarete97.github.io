@@ -18,9 +18,9 @@ var pj_1 = new datos_pj(
 	17,
 	'Agua',
 	'Masculino',
-	'Introvertido,amable y sensible, pero con una confianza en sí mismo que no duda en demostrar cuando la ocasión lo necesita',
-	'Un chico del elemento agua, que utiliza sus conocimientos sobre ella para invocar a dos zorros acompañantes y fortalecer su capacidad ofensiva',
-	'Basado en el mito del kitsune, emplea los colores azules para además de vincularlo con el agua, para expresar su serenidad,acompañando a su conjunto blanco y negro, expresa simpleza y pureza. Es el más joven de los aventureros de esta historia. Su actitud amable y pura que no dudará en cambiar si necesita salvar a quienes le importan'
+	'Introvertido,amable y sensible, pero con una confianza en sí mismo que no duda en demostrar cuando la ocasión lo necesita.',
+	'Un chico del elemento agua, que utiliza sus conocimientos sobre ella para invocar a dos zorros acompañantes y fortalecer su capacidad ofensiva.',
+	'Basado en el mito del kitsune, emplea los colores azules para además de vincularlo con el agua, para expresar su serenidad,acompañando a su conjunto blanco y negro, expresa simpleza y pureza. Es el más joven de los aventureros de esta historia. Su actitud amable y pura que no dudará en cambiar si necesita salvar a quienes le importan.'
 	);
 
 var pj_2 = new datos_pj(
@@ -29,9 +29,9 @@ var pj_2 = new datos_pj(
 	14,
 	"Agua",
 	" ",
-	"Traviesos y juguetones",
-	"Dos zorros de agua invocados por Kit en su niñez que le acompañan y ayudan a lo largo de sus aventuras",
-	"Para fortalecer el diseño basado en el mito del kitsune de su acompañante y creador, estas dos criaturas buscan representar agua tomando forma, con ello se emplean gamas de azules y verdes que representarán los reflejos de su entorno,  y conservar mayormente trasparencias"
+	"Traviesos y juguetones.",
+	"Dos zorros de agua invocados por Kit en su niñez que le acompañan y ayudan a lo largo de sus aventuras.",
+	"Para fortalecer el diseño basado en el mito del kitsune de su acompañante y creador, estas dos criaturas buscan representar agua tomando forma, con ello se emplean gamas de azules y verdes que representarán los reflejos de su entorno,  y conservar mayormente trasparencias."
 	);
 
 
@@ -41,9 +41,9 @@ var pj_3 = new datos_pj(
 	24,
 	"Aire",
 	"Masculino",
-	"Arrogante y altivo, pero de buen  corazón",
-	"Un joven de elemento aire, con una gran convicción por sus creencias,de familia de clase alta busca superar la reputación familiar y seguir enalteciendo el legado familiar",
-	"Basado en el signo zodiacal Tauro, busca representar ambición y caballerosidad, a la \"antigua\", inspirado por la paleta de \"El orgullo\" de Heller adornado con elementos cristalinos que representen la esencia del aire con el lujo de los elementos en oro"
+	"Arrogante y altivo, pero de buen  corazón.",
+	"Un joven de elemento aire, con una gran convicción por sus creencias,de familia de clase alta busca superar la reputación familiar y seguir enalteciendo el legado familiar.",
+	"Basado en el signo zodiacal Tauro, busca representar ambición y caballerosidad, a la \"antigua\", inspirado por la paleta de \"El orgullo\" de Heller adornado con elementos cristalinos que representen la esencia del aire con el lujo de los elementos en oro."
 	);
 
 var pj_4 = new datos_pj(
@@ -63,9 +63,9 @@ var pj_5 = new datos_pj(
 	22,
 	"Fuego",
 	"Femenino",
-	"Decidida y valiente, no teme hacerse valer cuando algo no le parece correcto",
-	"Una joven de elemento fuego, marginada por su condición de nacimiento y tras vivir en las sombras de su ciudad natal, cambia su nombre y decide entrar al culto de Lilith para empezar una nueva vida, un culto consagrado a la figura femenina en el que busca por fin poder ser reconocida como lo que siempre fue",
-	"Basada en el concepto de Lilth y su condición como primer esposa bíblica, busca expresar un diseño de novia, pero en colores inspirados en rescollos de una hogera"
+	"Decidida y valiente, no teme hacerse valer cuando algo no le parece correcto.",
+	"Una joven de elemento fuego, marginada por su condición de nacimiento y tras vivir en las sombras de su ciudad natal, cambia su nombre y decide entrar al culto de Lilith para empezar una nueva vida, un culto consagrado a la figura femenina en el que busca por fin poder ser reconocida como lo que siempre fue.",
+	"Basada en el concepto de Lilth y su condición como primer esposa bíblica, busca expresar un diseño de novia, pero en colores inspirados en rescollos de una hogera."
 	);
 
 
@@ -75,9 +75,9 @@ var pj_6 = new datos_pj(
 	18,
 	"Roca",
 	"Masculino",
-	"Aventurero y charlatan, resulta ser el alma de la fiesta en cada reunión. Es el rebelde de los dos",
-	"Onix y Abis, criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
-	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar. Por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
+	"Aventurero y charlatan, resulta ser el alma de la fiesta en cada reunión. Es el rebelde de los dos.",
+	"Onix y Abis, criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación.",
+	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar. Por último comparten ropajes para fortalecer la concepción de ellos como hermanos."
 	);
 
 
@@ -87,9 +87,9 @@ var pj_7 = new datos_pj(
 	18,
 	"Roca",
 	"Masculino",
-	"Sereno e introvertido, es la parte calmada de los hermanos ",
-	"Abis y Onix, criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación",
-	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar. Por último comparten ropajes para fortalecer la concepción de ellos como hermanos"
+	"Sereno e introvertido, es la parte calmada de los hermanos.",
+	"Abis y Onix, criados desde pequeños en las duras condiciones de los nómadas del desierto, ambos hermanos crecen juntos colaborando en el comercio familiar. Es en la visita a una ciudad y conocer a su regidor que les ofrece un trato para establecer su comercio en la ciudad, eto hace que los pequeños puedan asentarse y estudiar. Con ello se apuntan a los entrenamientos. Años después se embarcan en una aventura que les llevan a encontrarse con el conocimiento de los Cristales, culminando esta aventura con su participación en los juegos de selección de representación.",
+	"Concebidos como representación de una pequeña de una pequeña sección de los poderes de la roca, El Cristal, y creados y diseñados como un conjunto. Ponen de manifiesto unas ropas humildes y de supervivientes,que reflejen la dura competición que han tenido que sortear para llegar. Por último comparten ropajes para fortalecer la concepción de ellos como hermanos."
 	);
 
 
@@ -101,7 +101,7 @@ var pj_8 = new datos_pj(
 	"Femenino",
 	"Tranquila, amable y risueña",
 	"Elegida por su tribu para representarlos logra conquistar el corazón de los habitantes de la capital durante la selección. Gracias a su despliegue del control vegetal, su amabilidad y aprecio por las artes.",
-	"De naturaleza optimista, tranquila y relajada, su diseño inspirado en ropas tribales y paleta de tonos verdes y orgánicas que evoquen los colores de los bosques"
+	"De naturaleza optimista, tranquila y relajada, su diseño inspirado en ropas tribales y paleta de tonos verdes y orgánicas que evoquen los colores de los bosques."
 	);
 
 
@@ -111,38 +111,48 @@ var pj_9 = new datos_pj(
 	24,
 	"Natura",
 	"Masculino",
-	"Bonachón, amable y confiado",
-	"Amable y carismático, gana el respeto de su tribu gracias a sus altruistas hazañas, su amabilidad y habilidades de comunicación que le lograron también la victoria en el concurso de selección de representantes",
-	"Su diseño se mantiene instiprado en ropas tribales con la inspiracón cromatica de los bosques y sus colores"
+	"Bonachón, amable y confiado.",
+	"Amable y carismático, gana el respeto de su tribu gracias a sus altruistas hazañas, su amabilidad y habilidades de comunicación que le lograron también la victoria en el concurso de selección de representantes.",
+	"Su diseño se mantiene instiprado en ropas tribales con la inspiracón cromatica de los bosques y sus colores."
 	);
 
-
 var pj_10 = new datos_pj(
+	"Pj_Hielo_1",
+	"Runa",
+	23,
+	"Hielo",
+	"Femenino",
+	"Fuerte e independiente.",
+	"De caracter fuerte y ligeramente temperamental, la pequeña Runa se cria en un clima hostil de tensión política por el poder dentro de su nación. De padre desconocido, ella y su madre se abren camino hasta alcanzar la alta sociedad, posición que buscan asentar enviando a Runa a la ceremonia sagrada como primera hija del hielo en presenciarla, confiriendole renombre y linaje a su familia.",
+	"Su diseño está basado en una guerrera. Su vestimenta simple y elaborada principalmente contra el frío, usa principalmente el color marron, un color muy común, y que representa sus origenes sin grandes lujos y que tiene todo por conqustar. Por ultimo el azul verdoso de su cara expresa la serenidad y confianza que tiene de que logrará su objetivo."
+	);
+
+var pj_11 = new datos_pj(
 	"Pj_Neutro_1",
 	"Volra'a",
 	23,
 	"Desconocida",
 	"Masculino",
-	"Enigmático y reservado",
-	"Vive rodeado de enigmas en torno a su persona, sin parientes cercanos a los que acudir, vive una vida modesta y nómada con una simple frase como método de vida: <i> 'Que el caos sea tu fuerza, y el orden tu camino'</i>",
+	"Enigmático y reservado.",
+	"Vive rodeado de enigmas en torno a su persona, sin parientes cercanos a los que acudir, vive una vida modesta y nómada con una simple frase como método de vida: <i> 'Que el caos sea tu fuerza, y el orden tu camino'</i>.",
 	"De tonos apagados y poco llamativos, busca un estilo que no destaque con el fin de camuflarse entre todos los sitios que visita. Sus escasas pertenencias familiares son unos brazales y dos armas gemelas, las cuales suele llevar ocultas. Su diseño busca además resaltar la dualidad de inocencia y el peso de la misión que le aguarda. Mantener vivo el legado de toda una nación que poco a poco se ha ido extinguiendo. Sensaciones que remarcan su vestimenta oscura (el peso interior) ocultado por su capa de pureza e inicencia (Capa blanca) que puede usar para 'protegerse' en la multitud y pasar desapercibido."
 	);
 
 
-var pj_11 = new datos_pj(
+var pj_12 = new datos_pj(
 	"Pj_Neutro_2",
 	"Sae'li",
 	"Desconocida",
 	"Desconocida",
 	"Femenino",
-	"Pausada y serena",
-	"Una criatura mítica que se dice solo se aparece a quien es digno de consagrarse a Dorne",
-	"De color puramente blanco busca representar la forma más tangible de la pureza, magestuosa e imponente. Los toques de negro dentro de su cabeza ejemplifican las impurezas adquiridas en su vida pasada y que no supo solventar"
+	"Pausada y serena.",
+	"Una criatura mítica que se dice solo se aparece a quien es digno de consagrarse a Dorne.",
+	"De color puramente blanco busca representar la forma más tangible de la pureza, magestuosa e imponente. Los toques de negro dentro de su cabeza ejemplifican las impurezas adquiridas en su vida pasada y que no supo solventar."
 	);
 
 
 
-var listaPjs = [pj_1,pj_2,pj_3,pj_4,pj_5,pj_6,pj_7,pj_8,pj_9,pj_10,pj_11];
+var listaPjs = [pj_1,pj_2,pj_3,pj_4,pj_5,pj_6,pj_7,pj_8,pj_9,pj_10,pj_11,pj_12];
 
 function lista(){
 
