@@ -123,8 +123,8 @@ var pj_10 = new datos_pj(
 	"Hielo",
 	"Femenino",
 	"Fuerte e independiente.",
-	"De caracter fuerte y ligeramente temperamental, la pequeña Runa se cria en un clima hostil de tensión política por el poder dentro de su nación. De padre desconocido, ella y su madre se abren camino hasta alcanzar la alta sociedad, posición que buscan asentar enviando a Runa a la ceremonia sagrada como primera hija del hielo en presenciarla, confiriendole renombre y linaje a su familia.",
-	"Su diseño está basado en una guerrera. Su vestimenta simple y elaborada principalmente contra el frío, usa principalmente el color marron, un color muy común, y que representa sus origenes sin grandes lujos y que tiene todo por conqustar. Por ultimo el azul verdoso de su cara expresa la serenidad y confianza que tiene de que logrará su objetivo."
+	"De carácter fuerte y ligeramente temperamental, la pequeña Runa se cría en un clima hostil de tensión política por el poder dentro de su nación. De padre desconocido, ella y su madre se abren camino hasta alcanzar la alta sociedad, posición que buscan asentar enviando a Runa a la ceremonia sagrada como primera hija del hielo en presenciarla, confiriéndole renombre y linaje a su familia.",
+	"Su diseño está basado en una guerrera. Su vestimenta simple y elaborada principalmente contra el frío, usa principalmente el color marrón, un color muy común, y que representa sus orígenes sin grandes lujos y que tiene todo por conquistar. Por ultimo el azul verdoso de su cara expresa la serenidad y confianza que tiene de que logrará su objetivo."
 	);
 
 var pj_11 = new datos_pj(
