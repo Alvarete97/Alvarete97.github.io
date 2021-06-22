@@ -36,5 +36,8 @@ function navegar(){
 		document.getElementById('esc_nav').href  = "escenarios.html";
 		document.getElementById('esc_nav').innerHTML  = "Escenarios";
 
+		document.getElementById('contacto').href  = "contacto.html";
+		document.getElementById('contacto').innerHTML  = "Contacto";
+
 	
 }
